@@ -1,0 +1,18 @@
+CREAR UN ARCHIVO .LEX
+		Escribir en la terminal mkdir FLEX 
+		>> ll (doble ele) 
+		>> code . 
+		>> escribir el código de las hojas en la carpeta FLEX que se abrió en visual code y guardarlo con la extensión .lex (ej. capital.lex) 
+		>> regresa a la terminal y escribe ll (doble ele) para verificar que el archivo ya se encuentra allí 
+
+EJECUTAR UN ARCHIVO .LEX
+		entrar a la carpeta con cd FLEX 
+		>> flex capital.lex (nombre del archivo.lex) 
+		>> ll (doble ele) 
+		>> debe mostrar un archivo ejecutable en c 
+		>> gcc lex.yy.c -o capital.out (gcc + lex.yy.c -o nombre del archivo c.out) (.out es el archivo ejecutable en linux en lugar de .exe) 
+		>> ll (doble ele) 
+		>> ./capital.out (para ejecutar el archivo.out se escribe ./ antes de escribir el nombre, ej. /determinante.out)
+
+ACTUALIZA FLEX
+		Sudo apt update / sudo apt install flex
