@@ -28,4 +28,4 @@ int main(void)
     return 0;
 }
 
-*/Sale del programa con Ctrl + C*/
+/*Sale del programa con Ctrl + C*/
