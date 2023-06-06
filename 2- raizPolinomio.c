@@ -3,20 +3,20 @@
 
 int main (void)
 {
-    double a,b,c,discriminant,root1,root2,LIMIT=1e-6;
-    printf("Ingresa los coeficientes de ax²+bx+c: ");
-    scanf("%lf %lf %lf", &a,&b,&c);
-    discriminant=b*b-4.0*a*c;
-    printf("discriminant = %lf\n", discriminant);
-    if (discriminant > LIMIT){
-        root1 =(-b+sqrt(discriminant))/2.0/a;
-        root2 =(-b-sqrt(discriminant))/2.0/a;
-        printf('root1 = %lf, root2 = %lf\n', root1,root2);
+    double a, b, c, discriminante, raiz1, raiz2, LIMIT=1e-6;
+    printf("Ingresa los coeficientes de ax^2+bx+c: ");
+    scanf("%lf %lf %lf", &a, &b, &c);
+    discriminante = b*b-4.0*a*c;
+    printf("discriminant = %lf\n", discriminante);
+    if (discriminante > LIMIT){
+        raiz1 =(-b+sqrt(discriminante))/2.0/a;
+        raiz2 =(-b-sqrt(discriminante))/2.0/a;
+        printf("raíz 1 = %lf, raíz 2 = %lf\n", raiz1,raiz2);
     }
-    else if (fabs(discriminant)<= LIMIT)
+    else if (fabs(discriminante)<= LIMIT)
     {
-        root1 = -b/2.0/a;
-        root2 = 0.0;
+        raiz1 = -b/2.0/a;
+        raiz2 = 0.0;
         printf("");
     }
 }//main
