@@ -1,4 +1,4 @@
-/* Declara dos contadores, uno para el número de líneas y otro para el número de carácteres */
+/* Declara dos contadores, uno para el numero de lineas y otro para el número de carácteres */
 %{
     int noLineas = 0;
     int noCarac = 0;
@@ -13,14 +13,14 @@
 end  return 0;
 %%
 
-/***Sección código de usuario***/
+/***Seccion codigo de usuario***/
 int yywrap(){}
 int main(int argc, char **argv)
 {
     yylex();
-    printf("Número de líneas = %d, número de carácteres = %d\n",
+    printf("Numero de lineas = %d, numero de caracteres = %d\n",
             noLineas, noCarac);
 
     return 0;
 }
-*/Sale del programa escribiendo end*/
+/*Sale del programa escribiendo end*/
