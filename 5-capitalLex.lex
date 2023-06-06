@@ -43,4 +43,4 @@ int main(){
     return 0;
 }   
 
-*/Sale del programa dando enter*/
+/*Sale del programa dando enter*/
